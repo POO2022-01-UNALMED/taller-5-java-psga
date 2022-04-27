@@ -1,5 +1,3 @@
-package test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -28,7 +26,7 @@ public class TestConstructores {
 		if(zoo1.getNombre() == null && zoo2.getNombre().equals("Central park")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Zoologico");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Zoologico");
     }
 	
 	@Test
@@ -43,7 +41,7 @@ public class TestConstructores {
 				&& zona2.getZoo().getNombre() ==  null) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Zona");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Zona");
     }
 	
 	@Test
@@ -57,7 +55,7 @@ public class TestConstructores {
 				&& an2.getHabitat().equals("casa") && an2.getGenero().equals("m")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Animal");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Animal");
     }
 	
 	@Test
@@ -72,7 +70,7 @@ public class TestConstructores {
 				&& an2.getColorPiel().equals("verde") && an2.isVenenoso() == false) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Anfibio");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Anfibio");
     }
 	
 	@Test
@@ -87,7 +85,7 @@ public class TestConstructores {
 				&& an2.getColorPlumas().equals("gris")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Ave");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Ave");
     }
 	
 	@Test
@@ -102,7 +100,7 @@ public class TestConstructores {
 				&& an2.isPelaje() == false && an2.getPatas() == 2) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Mamifero");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Mamifero");
     }
 	
 	@Test
@@ -117,7 +115,7 @@ public class TestConstructores {
 				&& an2.getColorEscamas().equals("azul") && an2.getCantidadAletas() == 3) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Pez");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Pez");
     }
 	
 	@Test
@@ -132,7 +130,7 @@ public class TestConstructores {
 				&& an2.getColorEscamas().equals("cafe") && an2.getLargoCola() == 1) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Reptil");
+		Assertions.assertTrue(ok, "Hay un error en los constructores de la clase Reptil");
     }
 
 }

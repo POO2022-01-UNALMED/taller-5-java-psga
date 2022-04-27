@@ -1,5 +1,3 @@
-package test;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.MethodOrderer;
@@ -37,7 +35,7 @@ public class TestRetornos {
 		if(Animal.totalPorTipo().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo totalPorTipos");
+		Assertions.assertTrue(ok, "Hay un problema en el metodo totalPorTipos");
     }
 	
 	@Test
@@ -49,7 +47,7 @@ public class TestRetornos {
 		if(an2.toString().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo toString de la clase Animal");
+		Assertions.assertTrue(ok, "Hay un problema en el metodo toString de la clase Animal");
     }
 	
 	@Test
@@ -66,6 +64,6 @@ public class TestRetornos {
 				&& a5.movimiento().equals("reptar")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en algun metodo movimiento de las subclases y la clase Animal");
+		Assertions.assertTrue(ok, "Hay un problema en algun metodo movimiento de las subclases y la clase Animal");
     }
 }

@@ -1,5 +1,3 @@
-package test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -62,7 +60,7 @@ public class TestCantidades {
 		if(Mamifero.caballos == 3 && Mamifero.leones == 1) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema con el conteo de caballos o leones");
+		Assertions.assertTrue(ok, "Hay un problema con el conteo de caballos o leones");
     }
 	
 	@Test
@@ -72,7 +70,7 @@ public class TestCantidades {
 		if(Ave.aguilas == 2 && Ave.halcones == 3) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema con el conteo de aguilas o halcones");
+		Assertions.assertTrue(ok, "Hay un problema con el conteo de aguilas o halcones");
     }
 	
 	@Test
@@ -83,7 +81,7 @@ public class TestCantidades {
 		if(Anfibio.ranas == 2 && Anfibio.salamandras == 1) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema con el conteo de ranas o salamandras");
+		Assertions.assertTrue(ok, "Hay un problema con el conteo de ranas o salamandras");
     }
 	
 	@Test
@@ -94,7 +92,7 @@ public class TestCantidades {
 		if(Reptil.iguanas == 2 && Reptil.serpientes == 1) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema con el conteo de iguanas o serpientes");
+		Assertions.assertTrue(ok, "Hay un problema con el conteo de iguanas o serpientes");
     }
 	
 	@Test
@@ -105,6 +103,6 @@ public class TestCantidades {
 		if(Pez.salmones == 1 && Pez.bacalaos == 2) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema con el conteo de salmones o bacalaos");
+		Assertions.assertTrue(ok, "Hay un problema con el conteo de salmones o bacalaos");
     }
 }
