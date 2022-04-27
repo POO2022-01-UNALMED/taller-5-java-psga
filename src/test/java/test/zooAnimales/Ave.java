@@ -1,4 +1,5 @@
-package zooAnimales;
+package test.zooAnimales;
+
 import java.util.ArrayList;
 
 public class Ave extends Animal {

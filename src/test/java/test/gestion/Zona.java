@@ -1,8 +1,8 @@
-package gestion;
+package test.gestion;
 
-package gestion;
-import zooAnimales.Animal;
-import java.util.ArrayList;;
+import test.zooAnimales.Animal;
+
+import java.util.ArrayList;
 public class Zona {
     private String nombre;
     private Zoologico zoo;

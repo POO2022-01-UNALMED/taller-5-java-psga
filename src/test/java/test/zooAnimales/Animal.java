@@ -1,5 +1,5 @@
-package zooAnimales;
-import gestion.Zona;
+package test.zooAnimales;
+import test.gestion.Zona;
 
 public class Animal {
 
@@ -52,7 +52,7 @@ public class Animal {
 
 
     public static String totalPorTipo(){
-        return"Mamiferos: "+Mamifero.cantidadMamiferos() + "\n" +"Aves: " + Ave.cantidadAves() + "\n" +
+        return"Mamiferos: "+ Mamifero.cantidadMamiferos() + "\n" +"Aves: " + Ave.cantidadAves() + "\n" +
                 "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces()+ "\n"
                 + "Anfibios: " + Anfibio.cantidadAnfibios();
 
